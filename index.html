@@ -1,0 +1,126 @@
+
+<!-- ############################################################################################################################## -->
+<!-- #  John Wiley & Sons, Inc.                                                                                                   # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Book:   Algorithms in Bioinformatics: Theory and Implementation                                                           # -->
+<!-- #  Author: Dr. Paul A. Gagniuc                                                                                               # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Institution:                                                                                                              # -->
+<!-- #    University Politehnica of Bucharest                                                                                     # -->
+<!-- #    Faculty of Engineering in Foreign Languages                                                                             # -->
+<!-- #    Department of Engineering in Foreign Languages                                                                          # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Area:   European Union                                                                                                    # -->
+<!-- #  Date:   04/01/2021                                                                                                        # -->
+<!-- #                                                                                                                            # -->
+<!-- #  Cite this work as:                                                                                                        # -->
+<!-- #    Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, 2021, ISBN: 9781119697961. # -->
+<!-- #                                                                                                                            # -->
+<!-- ############################################################################################################################## -->
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+		<style>
+
+			body, tr {
+				padding: 0rem;
+			  
+				font-family: monospace;
+				font-size: 16px; 
+				font-style: normal; 
+				font-variant: normal;
+				line-height: 20px;
+			}
+		
+		</style>
+
+	<head>
+	
+	<body>
+
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<div style="width:300px;">
+							<p><label id="s0_size">Text: <input type="text" id="sequence_s0"></label></p>
+							<p><label id="result">Entropy: 0</label></p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr>
+		&nbsp; Paul A. Gagniuc. <i>Algorithms in Bioinformatics: Theory and Implementation</i>. John Wiley & Sons, USA, 2021, ISBN: 9781119697961.
+
+
+		<script>
+
+			//Input text
+			document.getElementById("sequence_s0").oninput = function() {
+				document.getElementById("result").innerHTML = 'Entropy: ' + entropy(this.value);	
+			}
+
+			// INFORMATION ENTROPY
+
+			function entropy(c){
+
+				//ALPHABET DETECTION
+				var a = [];
+				var t = c.split('');
+				var k = t.length;
+
+				for(var i=0; i<=k; i++){
+					var q = 1;
+					for(var j=0; j<=a.length; j++){
+						if (t[i] === a[j]) {q = 0;}
+					}
+					if (q === 1) {a.push(t[i]);}
+				}
+
+				var e = 0;
+				var r = '';
+				var l = '';
+
+				for(var i=0; i<=a.length-1; i++){
+				
+					r = c.replace(new RegExp(a[i], 'g'),'').length;
+					
+					l = a[i];
+					a[i]=(k-r)/k;
+
+					//e += -(a[i]*Log(2,a[i]));
+					e += (a[i]*Log(2,(1/a[i])));
+				}
+
+				return e;
+			}
+
+			function Log(n, v) {
+			  return Math.log(v) / Math.log(n);
+			}
+
+			// SHOW MATRIX CONTENT 
+			function SMC(m) {
+				var r = "<table border=1>";
+				for(var i=0; i<m.length; i++) {
+					r += "<tr>";
+					for(var j=0; j<m[i].length; j++){
+						r += "<td>"+m[i][j]+"</td>";
+					}
+					r += "</tr>";
+				}
+				r += "</table>";
+
+				return r;
+			}
+
+		</script>
+
+	</body>
+	
+</html>
