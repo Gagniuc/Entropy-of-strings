@@ -1,6 +1,25 @@
 # Entropy-of-strings
 
-It is a measure of the information content of the string, and can be interpreted as the number of bits required to encode each character of the string given perfect compression. The entropy is maximal when each character is equally likely...
+
+The current JS application calculates the entropy of a string.
+
+The focus of this implementation includes a specialized function called "entropy" which has the text sequence parameter and returns a value that represents entropy.
+
+
+Entropy measure of the information content of the string, and can be interpreted as the number of bits required to encode each symbol from a string given perfect compression. The entropy value is maximal when each character is equally likely...
+
+
+In information theory, entropy is a measure of the uncertainty in a random variable. In this context, the term usually refers to the Shannon entropy, which quantifies the expected value of the message's information.
+Claude E. Shannon introduced the formula for entropy in his 1948 paper "A Mathematical Theory of Communication."
+
+
+
+
+
+where n represents the total number of symbols in the alphabet of a sequence and
+pi represents the probability of occurrence of a symbol i found in the alphabet.
+
+
 
 ```js
 
@@ -45,3 +64,8 @@ function Log(n, v) {
 Live: https://gagniuc.github.io/Entropy-of-strings/
 
 ![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/text_entropy.png?raw=true)
+
+
+# References
+
+<i>Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, Hoboken, NJ, USA, 2021, ISBN: 9781119697961.</i>
