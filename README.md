@@ -12,18 +12,16 @@ Entropy measure of the information content of the string, and can be interpreted
 In information theory, entropy is a measure of the uncertainty in a random variable. In this context, the term usually refers to the Shannon entropy, which quantifies the expected value of the message's information.
 Claude E. Shannon introduced the formula for entropy in his 1948 paper "A Mathematical Theory of Communication."
 
-
-![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy%20eq.png?raw=true)
+<img src="https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy%20eq.png?raw=true" height="90" alt="Entropy">
 
 or
 
-![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy.png?raw=true)
-
+<img src="https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy.png?raw=true" height="100" alt="Entropy">
 
 where n represents the total number of symbols in the alphabet of a sequence and
 pi represents the probability of occurrence of a symbol i found in the alphabet.
 
-
+A step-by-step version of the entropy calculation is also shown [here](https://github.com/Gagniuc/Entropy-of-Text).
 
 ```js
 
