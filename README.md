@@ -3,7 +3,7 @@
 
 The current JS application calculates the entropy of a string.
 
-The focus of this implementation includes a specialized function called "entropy" which has the text sequence parameter and returns a value that represents entropy.
+The focus of this implementation is represented by a specialized function called "entropy" which has the text sequence parameter and returns a value that represents entropy.
 
 
 Entropy measure of the information content of the string, and can be interpreted as the number of bits required to encode each symbol from a string given perfect compression. The entropy value is maximal when each character is equally likely...
