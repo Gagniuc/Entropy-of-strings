@@ -13,7 +13,11 @@ In information theory, entropy is a measure of the uncertainty in a random varia
 Claude E. Shannon introduced the formula for entropy in his 1948 paper "A Mathematical Theory of Communication."
 
 
+![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy%20eq.png?raw=true)
 
+or
+
+![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy.png?raw=true)
 
 
 where n represents the total number of symbols in the alphabet of a sequence and
