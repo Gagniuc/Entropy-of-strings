@@ -8,7 +8,7 @@ Which can also be written as:
 
 <img src="https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/entropy.png?raw=true" height="100" alt="Entropy">
 
-Where n represents the total number of symbols in the alphabet of a sequence and pi represents the probability of occurrence of a symbol i found in the alphabet. A step-by-step version of the entropy calculation is also shown [here](https://github.com/Gagniuc/Entropy-of-Text)...
+Where <i>n</i> represents the total number of symbols in the alphabet of a sequence and <i>p<sub>i<sub></i> represents the probability of occurrence of a symbol <i>i</i> found in the alphabet. A step-by-step version of the entropy calculation is also shown [here](https://github.com/Gagniuc/Entropy-of-Text).
 
 ```js
 
