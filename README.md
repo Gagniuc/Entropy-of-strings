@@ -50,11 +50,11 @@ function Log(n, v) {
 }
 ```
 
-Live demo: https://gagniuc.github.io/Entropy-of-strings/
+**Live demo**: https://gagniuc.github.io/Entropy-of-strings/
 
-![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/text_entropy.png?raw=true)
+![screenshot](https://github.com/Gagniuc/Entropy-of-strings/blob/main/img/text_entropy.png?raw=true)
 
 
 # References
 
-<i>Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, Hoboken, NJ, USA, 2021, ISBN: 9781119697961.</i>
+- <i>Paul A. Gagniuc. Algorithms in Bioinformatics: Theory and Implementation. John Wiley & Sons, Hoboken, NJ, USA, 2021, ISBN: 9781119697961.</i>
